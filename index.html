@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+        <title> Temperature Converter</title>
+        
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        
+        
+    </head>
+
+    <body>
+       
+        <h2> Online Temperature Converter</h2>
+        <p class="Pembuka"> Masukkan nilai beserta satuan suhu yang ingin dikonversi ke kotak di bawah ini: </p>
+
+        <!-- bagian Celcius ke Fahrenheit-->
+        <div class="Temp1">
+        Celcius ke Fahrenheit
+            <div>
+                <input id="angkaSuhuCF" placeholder="ºC"></input>
+            </div>
+            
+        </div>
+
+        <div class="btn">
+            
+        <button onclick= "KonversiCF()" class="btnRow" id= "btnKonversiCF"> Konversi </button>
+
+        </div>
+        
+            <!-- bagian hasil-->
+        <p class="Penutup"> Hasil konversi akan muncul di kotak di bawah ini: </p>
+        <textarea id="HasilKonversiCF" name="TempatHasil" placeholder="Hasil"></textarea>
+    
+        <p class="Calculation">Cara perhitungan:</p>
+        <textarea id="PerhitunganCF"></textarea>
+        <HR>
+
+        <!--bagian Fahrenheit ke Celcius-->
+ <div class="Temp1">
+    Fahrenheit ke Celcius
+        <div>
+            <input id= "angkaSuhuFC" placeholder="ºF"></input>
+        </div>
+        
+    </div>
+
+    <div class="btn">
+        
+    <button onclick= "KonversiFC()" class="btnRow" id= "btnKonversiFC"> Konversi </button>
+
+    </div>
+    
+        <!-- bagian hasil-->
+    <p class="Penutup"> Hasil konversi akan muncul di kotak di bawah ini: </p>
+    <textarea id="HasilKonversiFC" name="TempatHasil" placeholder="Hasil"></textarea>
+    <p class="Calculation">Cara perhitungan:</p>
+    <textarea id="PerhitunganFC"></textarea>
+
+<script src="script.js"></script>
+    
+</body>
+
+ </html>
